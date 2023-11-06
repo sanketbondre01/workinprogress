@@ -1,0 +1,21 @@
+<html>
+<body>
+    <h1>Student validation form</h1>
+    <h1>Signup form</h1>
+    <form id='myForm'>
+        <label> Student name : <input id="myInput" type="text" ></label>
+    </form>
+    <script>
+        var x = document.getElementById("myForm");
+        x.addEventListener("focus",myFocusfunction,true);
+        x.addEventListener("blur",myBlurfunction,true);
+
+        function myFocusfunction(){
+            document.getElementById("myInput").style.backgroundColor="yellow";
+        }
+        function myBlurfunction(){
+            document.getElementById("myInput").style.backgroundColor="blue";
+        }
+    </script>
+</body>
+</html>

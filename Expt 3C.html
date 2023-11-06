@@ -1,0 +1,22 @@
+<html>
+<body>
+    <script>
+        var string = prompt("Enter the string: ");
+        document.write(string+"<br>");
+        var flag = 0;
+
+        for(let i = 0; i<=string.length/2; i++){
+            if(string[i] != string[string.length-1-i]){
+                flag = 1
+            }
+        }
+
+        if(flag == 1){
+            document.write("String is not palindrome <br>");
+        }else{
+            document.write("String is palindrome");
+        }
+
+    </script>
+</body>
+</html>

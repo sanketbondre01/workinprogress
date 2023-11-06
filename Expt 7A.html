@@ -1,0 +1,30 @@
+<html>
+<body>
+    <script>
+        
+        function insertArr(arr,obj){
+            arr.push(obj);
+            document.write(arr+"<br>");
+        }
+
+        function isArray(arr){
+            var result = Array.isArray(arr);
+
+        if(result){
+            document.write("Array <br>");
+        }else{
+            document.write("Not Array <br>");
+        }
+        }
+
+        var array = ['apple','banana','grapes','mango','strawberry'];
+        document.write(array+"<br>");
+
+        var array1 = {x:5,y:10};
+        document.write(array1+"<br>");
+
+        insertArr(array,array1);
+        isArray(array1);
+    </script>
+</body>
+</html>

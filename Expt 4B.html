@@ -1,0 +1,21 @@
+<html>
+<body>
+    <script>
+        var str1 = "JavaScript Program";
+        var str2 = "javascript program";
+
+        document.write(str1+"<br>");
+        document.write(str2+"<br>");
+
+        var pattern = new RegExp(str1,"gi");
+        var result = pattern.test(str2);
+
+        if(result){
+            document.write("strings are same <br>");
+        }else{
+            document.write("strings are not same <br>");
+        }
+
+    </script>
+</body>
+</html>

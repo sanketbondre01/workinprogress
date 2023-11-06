@@ -1,0 +1,25 @@
+<html>
+<body>
+    <script>
+        var set1 = new Set(['apple','banana','kiwi','grapes']);
+        var set2 = new Set(['mango','banana','cherry','jackfruit']);
+
+        function intersection(a,b){
+            let interSet = new Set();
+            for(let i of b){
+                if(a.has(i)){
+                interSet.add(i);
+                }
+            }
+            return interSet;
+        }
+
+        var result = intersection(set1,set2);
+
+        for(i of result.values()){
+            document.write(i+", ");
+        }
+
+    </script>
+</body>
+</html>

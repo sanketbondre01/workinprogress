@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Experiment 3a</title>
+        <h1>String Reversal program</h1>
+    </head>
+<body>
+    <script>
+        function reverseStr(str){
+            var newStr = "";
+
+            for(let i=str.length-1; i>=0; i--){
+                newStr += str[i];
+            }
+            return newStr;
+        }
+
+        var string = prompt("Enter the string to be reversed : ");
+        
+        var result = reverseStr(string);
+        document.write(string+"<br>");
+        document.write(result);
+
+    </script>
+</body>
+</html>

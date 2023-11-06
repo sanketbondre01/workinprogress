@@ -1,0 +1,23 @@
+<html>
+<body>
+    <script>
+        var set1 = new Set(['apple','banana','kiwi','grapes']);
+        var set2 = new Set(['mango','banana','cherry','jackfruit']);
+
+        function difference(a,b){
+            let differSet = new Set(a);
+            for(let i of b){
+                differSet.delete(i);
+            }
+            return differSet;
+        }
+
+        var result = difference(set1,set2);
+
+        for(i of result.values()){
+            document.write(i+", ");
+        }
+
+    </script>
+</body>
+</html>

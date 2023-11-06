@@ -1,0 +1,23 @@
+<html>
+<body>
+    <script>
+        var set1 = new Set(['apple','banana','kiwi','grapes']);
+        var set2 = new Set(['mango','banana','cherry','jackfruit']);
+
+        function union(a,b){
+            let unionSet = new Set(a);
+            for(let i of b){
+                unionSet.add(i);
+            }
+            return unionSet;
+        }
+
+        var result = union(set1,set2);
+
+        for(i of result.values()){
+            document.write(i+", ");
+        }
+
+    </script>
+</body>
+</html>
